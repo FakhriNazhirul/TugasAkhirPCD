@@ -1,0 +1,21 @@
+# Sistem Deteksi Plat Kendaraan — Dependencies
+# Install: pip install -r requirements.txt
+
+# ─── Core ───────────────────────────────────────────────
+opencv-python>=4.8.0        # Computer vision & Haar cascade detection
+PyQt5>=5.15.9               # GUI framework
+numpy>=1.24.0               # Array operations
+
+# ─── OCR (pilih salah satu atau keduanya) ───────────────
+easyocr>=1.7.0              # OCR utama (lebih akurat, butuh torch)
+# pytesseract>=0.3.10       # Alternatif OCR (butuh install Tesseract binary)
+
+# ─── Opsional ───────────────────────────────────────────
+# torch>=2.0.0              # Diperlukan EasyOCR (biasanya auto-install)
+# Pillow>=10.0.0            # Image utilities (opsional)
+
+# ─── Notes ──────────────────────────────────────────────
+# Untuk pytesseract, install binary Tesseract OCR:
+#   Windows: https://github.com/UB-Mannheim/tesseract/wiki
+#   Linux  : sudo apt install tesseract-ocr
+#   macOS  : brew install tesseract
